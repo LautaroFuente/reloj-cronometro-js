@@ -1,0 +1,172 @@
+/***** Custom Properties *****/
+:root{
+    --bg-color:rgba(66, 66, 66, 0.938);
+}
+
+/***** Reset Styles *****/
+  
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+  
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+}  
+
+a{
+    text-decoration: none;    
+}
+  
+
+  
+/***** My Styles *****/
+
+.aside{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    align-items: stretch;
+}
+
+.aside-container{
+    text-align: center;
+}
+
+.btn{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: var(--bg-color);
+    padding: 1rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.btn-icon{
+    font-size: 1.6rem;
+}
+
+.date{
+    font-size: 3rem;
+    margin-bottom: 23rem;
+    margin-top: 0;
+}
+
+.display{
+    background-color: rgb(0, 0, 0);;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(190, 84, 13);
+}
+
+.footer{
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid var(--bg-color);
+    color: rgb(255, 255, 255);
+}
+
+main{
+    display: grid;
+    grid-template-rows: 7rem 7rem 7rem 1fr;
+    grid-template-columns: 7rem 1fr;
+}
+
+.mode{
+    margin: 2rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.mode:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.mode-icon{
+    font-size: 1.6rem;
+}
+
+.nav{
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid var(--bg-color);
+    color: rgb(255, 255, 255);
+}
+
+.nav-link{
+    text-decoration: none;
+    color: inherit;
+    font-size:x-large;
+    font-weight: bold;
+    margin: 2rem;
+}
+
+.numbers{
+    font-weight: bold;
+    font-size: 7rem;
+    margin-top: 15rem;
+    margin-bottom: 1rem;
+}
+
+.white-mode{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+/***** Medias queries *****/
+  
+/* Small devices */
+@media (min-width: 576px){
+
+  }
+  
+/* Medium devices */
+@media (min-width: 768px){
+
+  }
+  
+/* Large devices */
+@media (min-width: 992px){
+      
+  }
+  
+/* X-Large devices */
+@media (min-width: 1200px){
+
+  }
+  
+/* XX-Large devices */
+@media (min-width: 1400px){
+      
+  }
