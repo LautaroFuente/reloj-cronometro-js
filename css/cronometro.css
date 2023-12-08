@@ -60,6 +60,36 @@ a{
     outline: none;
 }
 
+.btn-lap{
+    background-color: rgb(23, 13, 155);
+}
+
+.btn-ready{
+    background-color: rgb(31, 105, 35);
+}
+
+.btn-ready-change{
+    background-color: rgb(126, 16, 16);
+}
+
+.btn-reset{
+    background-color:rgb(190, 84, 13);
+}
+
+.btn-display{
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border: none;
+    margin: 2rem;
+    margin-bottom: 21.4rem;
+}
+
+.btn-display:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .btn:hover{
     cursor: pointer;
     opacity: 0.4;
@@ -96,6 +126,11 @@ a{
     align-items: center;
     border-top: 3px solid var(--bg-color);
     color: rgb(255, 255, 255);
+}
+
+.lap-time{
+    margin-bottom: 5rem;
+    font-size: 1.3rem;
 }
 
 main{
