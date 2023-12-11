@@ -53,8 +53,36 @@
         </aside>
 
         <div class="display" id="display">
-            <p class="numbers" id="numbers">00</p>
-            <button>Crear alarma</button>
+            <p class="numbers" id="numbers"></p>
+            <p class="date" id="date"></p>
+            <button class="alarm" id="alarm">Alarma</button>
+            <div id="my-alarms"></div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div style="text-align: center;">
+                    <h1>Crear Alarma</h1>
+
+                    <label for="inputHours">Horas:</label>
+                    <input type="number" id="inputHours" name="inputHours" min="0" max="23">
+                    <label for="inputMinutes">Minutos:</label>
+                    <input type="number" id="inputMinutes" name="inputMinutes" min="0" max="59">
+                </div>
+                <div>
+                    <button class="close" onclick="closeModal()">Cerrar</button>
+                    <button class="create" id="create">Crear</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal-its-time" class="modal">
+            <div class="modal-content">
+                <div style="text-align: center;">
+                    <h1 style="color: rgb(190, 84, 13); margin-top: 5rem;">Es La Hora!!</h1>
+                </div>
+                <div>
+                    <button class="close" onclick="closeModalItsTime()">Cerrar</button>
+                </div>
+            </div>
         </div>
     </main>
 

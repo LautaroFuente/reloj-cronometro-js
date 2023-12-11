@@ -149,28 +149,12 @@ main{
 }
 
 /***** Medias queries *****/
-  
-/* Small devices */
-@media (min-width: 576px){
 
-  }
-  
-/* Medium devices */
-@media (min-width: 768px){
-
-  }
-  
-/* Large devices */
-@media (min-width: 992px){
-      
-  }
-  
-/* X-Large devices */
-@media (min-width: 1200px){
-
-  }
-  
-/* XX-Large devices */
-@media (min-width: 1400px){
-      
-  }
+@media (max-width: 900px){
+    html{
+        font-size: 0.5rem;
+    }
+    main{
+        height: 90.4vh;
+    }
+}

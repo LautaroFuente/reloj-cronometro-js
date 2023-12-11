@@ -29,6 +29,21 @@ a{
   
 /***** My Styles *****/
 
+.alarm, .close, .create{
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border: none;
+    margin: 2rem;
+    margin-bottom: 12rem;
+    background-color: rgb(31, 105, 35);
+}
+
+.alarm:hover, .close:hover, .create:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
 .aside{
     grid-column-start: 1;
     grid-column-end: 2;
@@ -71,7 +86,7 @@ a{
 
 .date{
     font-size: 3rem;
-    margin-bottom: 23rem;
+    margin-bottom: 6rem;
     margin-top: 0;
 }
 
@@ -98,10 +113,45 @@ a{
     color: rgb(255, 255, 255);
 }
 
+input{
+    width: 6rem;
+    height: 2rem;
+}
+
+label{
+    font-size: 2rem;
+    padding: 1rem;
+    padding-top: 5rem;
+    font-weight:200;
+}
+
 main{
     display: grid;
     grid-template-rows: 7rem 7rem 7rem 1fr;
     grid-template-columns: 7rem 1fr;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgb(58, 55, 55);
+    width: 80%;
 }
 
 .mode{
@@ -118,6 +168,11 @@ main{
 
 .mode-icon{
     font-size: 1.6rem;
+}
+
+.my-alarms{
+    color:inherit;
+    font-size: 1.2rem;
 }
 
 .nav{
@@ -150,27 +205,11 @@ main{
 
 /***** Medias queries *****/
   
-/* Small devices */
-@media (min-width: 576px){
-
-  }
-  
-/* Medium devices */
-@media (min-width: 768px){
-
-  }
-  
-/* Large devices */
-@media (min-width: 992px){
-      
-  }
-  
-/* X-Large devices */
-@media (min-width: 1200px){
-
-  }
-  
-/* XX-Large devices */
-@media (min-width: 1400px){
-      
-  }
+@media (max-width: 900px){
+    html{
+        font-size: 0.5rem;
+    }
+    main{
+        height: 90.4vh;
+    }
+}
